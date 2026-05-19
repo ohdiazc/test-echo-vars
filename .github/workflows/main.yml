@@ -14,3 +14,5 @@ jobs:
     steps:
      - name: github event name
        run: echo ${{ github.event_name }};  echo ${{ github.ref }}
+     - name: github
+       run: echo ${{ github }}
