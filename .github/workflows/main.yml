@@ -13,4 +13,4 @@ jobs:
         working-directory: .
     steps:
      - name: github event name
-       run: echo ${{ github.event_name }}
+       run: echo ${{ github.event_name }};  echo ${{ github.ref }}
