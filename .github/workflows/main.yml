@@ -1,0 +1,16 @@
+name: "Test echo vars"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  test_echo:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: .
+    steps:
+     - name: github event name
+       run: echo ${{ github.event_name }}
